@@ -31,8 +31,8 @@
       <div class="nav-links">
         <a href="servicios.html">Servicios Audiovisuales</a>
         <a href="inhouse.html" class="nav-active">In House</a>
-        <a href="#">Experiencia</a>
-        <a href="#">Nosotros</a>
+        <a href="index.html#experiencia">Experiencia</a>
+        <a href="index.html#nosotros">Nosotros</a>
         <a href="contacto.html">Contacto</a>
       </div>
       <a href="contacto.html" class="btn-cta-nav">Agenda una cita</a>
@@ -234,7 +234,7 @@
         <a href="index.html">Home</a>
         <a href="servicios.html">Servicios Audiovisuales</a>
         <a href="inhouse.html">inHouse</a>
-        <a href="#">Experiencia</a>
+        <a href="index.html#experiencia">Experiencia</a>
         <a href="contacto.html">Contacto</a>
       </div>
       <div class="footer-col">
@@ -250,5 +250,30 @@
     </div>
   </footer>
 
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navbar = document.querySelector('.navbar-inner');
+    let mobileNav = null;
+
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      if (mobileNav) {
+        mobileNav.remove();
+        mobileNav = null;
+        return;
+      }
+      mobileNav = document.createElement('div');
+      mobileNav.className = 'mobile-nav-open';
+      const links = document.querySelectorAll('.nav-links a, .nav-right a');
+      links.forEach(link => {
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.textContent = link.textContent;
+        a.className = link.className;
+        mobileNav.appendChild(a);
+      });
+      navbar.appendChild(mobileNav);
+    });
+  </script>
 </body>
 </html>
