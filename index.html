@@ -33,9 +33,11 @@
         <a href="inhouse.html">In House</a>
         <a href="#">Experiencia</a>
         <a href="#">Nosotros</a>
-        <a href="contacto.html">Contacto</a>
       </div>
-      <a href="contacto.html" class="btn-cta-nav">Agenda una cita</a>
+      <div class="nav-right">
+        <a href="contacto.html" class="nav-contact-link">Contacto</a>
+        <a href="contacto.html" class="btn-cta-nav">Agenda una cita</a>
+      </div>
       <button class="mobile-menu-btn" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -44,12 +46,8 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
-      <div class="shape shape-5"></div>
+    <div class="hero-image">
+      <img src="img/hero-discs.jpeg" alt="Discos de cristal abstractos" />
     </div>
     <div class="hero-content">
       <p class="hero-label">INNOVACION ESTRATEGICA</p>
@@ -57,7 +55,7 @@
       <p class="hero-sub">Transformamos eventos en experiencias estratégicas integrando tecnología de punta, precisión técnica y creatividad única. Somos respaldo confiable que hace realidad tus objetivos corporativos.</p>
       <div class="hero-buttons">
         <a href="#" class="btn-primary">Conoce más</a>
-        <a href="#" class="btn-secondary">Agenda una cita</a>
+        <a href="#" class="btn-secondary">Contactáctanos</a>
       </div>
     </div>
   </section>
@@ -66,20 +64,32 @@
   <section class="transform-section">
     <div class="transform-inner">
       <div class="transform-icon">
-        <svg viewBox="0 0 80 80" width="80" height="80">
-          <path d="M40 5 C28 18, 28 62, 40 75 C52 62, 52 18, 40 5Z" fill="url(#tGrad)" opacity="0.7"/>
-          <path d="M30 15 C22 28, 22 52, 30 65" stroke="url(#tGrad)" stroke-width="2.5" fill="none"/>
-          <path d="M50 15 C58 28, 58 52, 50 65" stroke="url(#tGrad)" stroke-width="2.5" fill="none"/>
+        <svg viewBox="0 0 200 280" width="280" height="280">
           <defs>
             <linearGradient id="tGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#7c3aed"/>
-              <stop offset="100%" stop-color="#c4b5fd"/>
+              <stop offset="100%" stop-color="#a78bfa"/>
             </linearGradient>
           </defs>
+          <!-- Ondas exteriores -->
+          <path d="M40 50 C10 90, 10 190, 40 230" stroke="url(#tGrad)" stroke-width="4" fill="none" opacity="0.35"/>
+          <path d="M50 40 C15 85, 15 195, 50 240" stroke="url(#tGrad)" stroke-width="4" fill="none" opacity="0.45"/>
+          <path d="M60 30 C22 80, 22 200, 60 250" stroke="url(#tGrad)" stroke-width="4.5" fill="none" opacity="0.55"/>
+          <path d="M160 50 C190 90, 190 190, 160 230" stroke="url(#tGrad)" stroke-width="4" fill="none" opacity="0.35"/>
+          <path d="M150 40 C185 85, 185 195, 150 240" stroke="url(#tGrad)" stroke-width="4" fill="none" opacity="0.45"/>
+          <path d="M140 30 C178 80, 178 200, 140 250" stroke="url(#tGrad)" stroke-width="4.5" fill="none" opacity="0.55"/>
+          <!-- Forma central (hoja/pétalo) -->
+          <path d="M100 10 C65 60, 65 220, 100 270 C135 220, 135 60, 100 10Z" fill="url(#tGrad)" opacity="0.8"/>
+          <path d="M100 30 C75 70, 75 210, 100 250 C125 210, 125 70, 100 30Z" fill="url(#tGrad)" opacity="0.5"/>
+          <!-- Lineas interiores -->
+          <path d="M80 55 C60 100, 60 180, 80 225" stroke="#7c3aed" stroke-width="3" fill="none" opacity="0.6"/>
+          <path d="M120 55 C140 100, 140 180, 120 225" stroke="#7c3aed" stroke-width="3" fill="none" opacity="0.6"/>
         </svg>
       </div>
       <div class="transform-text">
-        <p>Transformamos eventos en herramientas de éxito, integrando de forma estratégica la creatividad y la tecnología para obtener resultados amplificados.</p>
+        <p class="section-label">INNOVACION ESTRATEGICA</p>
+        <h2>Transformamos eventos en herramientas de éxito, integrando de forma estratégica la creatividad y la tecnología para obtener resultados amplificados.</h2>
+        <a href="#" class="btn-primary" style="margin-top: 24px;">Conoce más</a>
       </div>
     </div>
   </section>
@@ -90,8 +100,10 @@
       <div class="gradient-overlay"></div>
     </div>
     <div class="trascienden-content">
+      <p class="section-label">INNOVACIÓN ESTRATÉGICA</p>
       <h2>Eventos que trascienden<br>e impulsan los resultados.</h2>
-      <p>Transformamos eventos en experiencias estratégicas integrando tecnología de punta, precisión técnica y creatividad única. Somos respaldo confiable que hace realidad tus objetivos corporativos.</p>
+      <p>En Singular adaptamos cada detalle de los eventos a las necesidades únicas de nuestros clientes, garantizando un servicio excepcional y resultados alineados con sus objetivos estratégicos.</p>
+      <a href="#" class="btn-primary" style="margin-top: 32px;">Descubre Cómo</a>
     </div>
   </section>
 
@@ -192,9 +204,9 @@
   <section class="amplificadores">
     <div class="amplificadores-content">
       <p class="section-label">EXPERIENCIA</p>
-      <h2>Eventos como amplificadores de Éxito.</h2>
+      <h2>Eventos como<br>amplificadores de Éxito.</h2>
     </div>
-    <div class="amplificadores-grid">
+    <div class="amplificadores-carousel">
       <div class="amp-card amp-img-1">
         <div class="amp-card-overlay"></div>
       </div>
@@ -216,31 +228,31 @@
           </div>
         </div>
       </div>
+      <div class="amp-card amp-img-3">
+        <div class="amp-card-overlay"></div>
+      </div>
     </div>
   </section>
 
   <!-- EXPERTICIA -->
   <section class="experticia">
     <div class="experticia-content">
-      <h2>Experticia y manejo impecable que garantiza eventos excepcionales, y lo mejor... sin estrés.</h2>
+      <h2>Experticia y manejo impecable<br>que garantiza eventos<br>excepcionales, y lo mejor...<br>sin estrés.</h2>
       <a href="#" class="btn-outline">Agenda una cita</a>
     </div>
     <div class="experticia-visual">
-      <div class="shape-cluster">
-        <div class="shape-ball s1"></div>
-        <div class="shape-ball s2"></div>
-        <div class="shape-ball s3"></div>
-      </div>
+      <img src="img/experticia-discs.jpeg" alt="Discos abstractos" />
     </div>
   </section>
 
   <!-- ADAPTA CADA DETALLE + STATS -->
   <section class="adapta">
     <div class="adapta-left">
-      <p class="section-label">INNOVACION ESTRATEGICA</p>
-      <h2>Adapta cada detalle del evento a tus necesidades únicas.</h2>
-      <p>En Singular adaptamos cada detalle de los eventos a las necesidades únicas de nuestros clientes, garantizando un servicio excepcional y resultados alineados con sus objetivos estratégicos.</p>
-      <a href="#" class="btn-primary">Descubre Cómo</a>
+      <p class="section-label">INNOVACIÓN ESTRATÉGICA</p>
+      <h2>Adapta cada detalle<br>del evento a tus<br>necesidades únicas.</h2>
+      <p><strong>Redefine los eventos corporativos</strong><br>Al integrarlos con estrategias de negocio. Cada evento se<br>convierte en una herramienta para alcanzar objetivos<br>organizacionales</p>
+      <p><strong>tu defines el objetivo</strong><br>desde fortalecer la imagen de marca hasta<br>generar alianzas clave. Tu decides la meta.</p>
+      <a href="#" class="btn-primary">Más sobre nosotros</a>
     </div>
     <div class="adapta-right">
       <div class="stat-block">
@@ -260,31 +272,23 @@
 
   <!-- CONQUISTA LAS METAS -->
   <section class="conquista">
-    <div class="conquista-visual">
-      <div class="conquista-shapes">
-        <div class="cshape c1"></div>
-        <div class="cshape c2"></div>
-        <div class="cshape c3"></div>
-      </div>
-    </div>
     <div class="conquista-content">
-      <h2>Conquista las metas de tu organización con experiencias únicas</h2>
-      <p class="conquista-sub">Eventos como amplificadores de Éxito.</p>
-      <p>Redefine los eventos corporativos al integrarlos con estrategias de negocio. Cada evento se convierte en una herramienta para alcanzar objetivos organizacionales.</p>
-      <p class="conquista-define"><strong>tu defines el objetivo</strong><br>desde fortalecer la imagen de marca hasta generar alianzas clave. Tu decides la meta.</p>
-      <a href="#" class="btn-primary">Más sobre nosotros</a>
+      <h2>Conquista las metas<br>de tu organización<br>con experiencias<br>únicas</h2>
+      <a href="#" class="btn-outline">Conoce nuestro portafolio</a>
     </div>
   </section>
 
   <!-- SERVICIOS AUDIOVISUALES -->
   <section class="servicios-av">
-    <div class="servicios-av-bg"></div>
+    <div class="servicios-av-img">
+      <img src="img/servicios-av.jpeg" alt="Pantalla LED evento" />
+    </div>
     <div class="servicios-av-content">
       <p class="section-label">NUESTRA OFERTA</p>
       <h2>Servicios Audiovisuales<br>para eventos</h2>
       <ul class="servicios-list">
         <li>Pantallas LED</li>
-        <li>Producción de Eventos (Diseños, Planeación, Desarrollo)</li>
+        <li>Producción de Eventos(Diseños, Planeación, Desarrollo)</li>
         <li>Transmisión Streaming</li>
         <li>Luminotecnia y Efectos</li>
         <li>Sonido Profesional</li>
@@ -294,7 +298,6 @@
         <li>Traducción Simultánea</li>
         <li>Eventos Híbridos</li>
       </ul>
-      <a href="#" class="btn-primary">Conoce más</a>
     </div>
   </section>
 
@@ -310,209 +313,96 @@
         <li>Acuerdos comerciales exclusivos para nuestros clientes</li>
         <li>Dotación de última tecnología y repotenciación a la vanguardia del mercado</li>
       </ul>
-      <a href="#" class="btn-primary">Conoce más</a>
     </div>
-    <div class="servicios-inhouse-visual">
-      <div class="inhouse-img-placeholder"></div>
+    <div class="servicios-inhouse-img">
+      <img src="img/servicios-inhouse.jpeg" alt="Técnico de sonido en evento" />
     </div>
   </section>
 
   <!-- QUE DICEN NUESTROS CLIENTES -->
   <section class="testimonios">
     <h2>Que dicen<br>nuestros clientes</h2>
-    <div class="google-reviews">
-      <div class="google-badge">
-        <span class="google-g">G</span>
-        <div>
-          <strong>Singular SAS</strong>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>5.0</span></div>
+    <div class="google-header-bar">
+      <div class="google-header-left">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span class="google-reviews-text"><strong>Google</strong> Reviews</span>
+        <div class="google-rating">
+          <span class="rating-num">4.7</span>
+          <span class="stars-gold">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="rating-count">(16,013)</span>
         </div>
       </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-avatar">A</div>
-          <div class="review-content">
-            <strong>Andrés G.</strong>
-            <div class="stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Excelente servicio, profesionales y comprometidos con la calidad."</p>
+      <a href="#" class="btn-review-google">Review us on Google</a>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card-google">
+        <div class="review-card-header">
+          <div class="review-avatar-google" style="background: #e57373;">A</div>
+          <div class="review-meta">
+            <strong>Abraham Vasq... <span class="verified">&#10003;</span></strong>
+            <span class="review-date"><span class="g-icon">G</span> 2 days ago</span>
           </div>
         </div>
-        <div class="review-card">
-          <div class="review-avatar r">R</div>
-          <div class="review-content">
-            <strong>Ricardo Z.</strong>
-            <div class="stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Soluciones innovadoras para nuestros eventos corporativos."</p>
+        <div class="stars-gold-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Increíble lugar para aprender de ciencias, astros, física... además ...</p>
+        <a href="#" class="review-read-more">Read more</a>
+      </div>
+      <div class="review-card-google">
+        <div class="review-card-header">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="review-avatar-img" alt="Jane" />
+          <div class="review-meta">
+            <strong>Jane Laboissi... <span class="verified">&#10003;</span></strong>
+            <span class="review-date"><span class="g-icon">G</span> 2 days ago</span>
           </div>
         </div>
-        <div class="review-card">
-          <div class="review-avatar m">M</div>
-          <div class="review-content">
-            <strong>María P.</strong>
-            <div class="stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Superaron nuestras expectativas en cada evento."</p>
+        <div class="stars-gold-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Só a volta pro carro à noite para a parte baixa é muito escuro, achei um...</p>
+        <a href="#" class="review-read-more">Read more</a>
+      </div>
+      <div class="review-card-google">
+        <div class="review-card-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" class="review-avatar-img" alt="Shane" />
+          <div class="review-meta">
+            <strong>Shane O'Brien <span class="verified">&#10003;</span></strong>
+            <span class="review-date"><span class="g-icon">G</span> 2 days ago</span>
           </div>
         </div>
-        <div class="review-card">
-          <div class="review-avatar c">C</div>
-          <div class="review-content">
-            <strong>Carolina M.</strong>
-            <div class="stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Tecnología de punta y un equipo muy profesional."</p>
+        <div class="stars-gold-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Great views of both the city and the Hollywood sign. Entry is free but...</p>
+        <a href="#" class="review-read-more">Read more</a>
+      </div>
+      <div class="review-card-google">
+        <div class="review-card-header">
+          <div class="review-avatar-google" style="background: #64b5f6;">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#fff"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#fff"/></svg>
+          </div>
+          <div class="review-meta">
+            <strong>wall design <span class="verified">&#10003;</span></strong>
+            <span class="review-date"><span class="g-icon">G</span> 3 days ago</span>
           </div>
         </div>
-        <div class="review-card">
-          <div class="review-avatar j">J</div>
-          <div class="review-content">
-            <strong>Jorge L.</strong>
-            <div class="stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <p>"Los mejores en producción audiovisual para eventos."</p>
+        <div class="stars-gold-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>i like the plugin</p>
+        <a href="#" class="review-read-more">Read more</a>
+      </div>
+      <div class="review-card-google">
+        <div class="review-card-header">
+          <div class="review-avatar-google" style="background: #81c784;">A</div>
+          <div class="review-meta">
+            <strong>Amy <span class="verified">&#10003;</span></strong>
+            <span class="review-date"><span class="g-icon">G</span> 3 days ago</span>
           </div>
         </div>
+        <div class="stars-gold-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Beautiful location with great overlooking views. This is also a great plac...</p>
+        <a href="#" class="review-read-more">Read more</a>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIAL CLASCO -->
-  <section class="testimonial-clasco">
-    <div class="testimonial-clasco-grid">
-      <div class="testimonial-clasco-info">
-        <svg class="logo-icon" viewBox="0 0 40 40" width="48" height="48">
-          <circle cx="20" cy="20" r="18" fill="none" stroke="url(#tcGrad)" stroke-width="2"/>
-          <path d="M20 8 C14 14, 14 26, 20 32 C26 26, 26 14, 20 8Z" fill="url(#tcGrad)" opacity="0.8"/>
-          <defs>
-            <linearGradient id="tcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#7c3aed"/>
-              <stop offset="100%" stop-color="#a78bfa"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <h4>DATOS DE CONTACTO</h4>
-        <p>info@singulartech.co</p>
-        <p>+57 313 494 1956</p>
-        <p>Cra 10 #26-21<br>Hotel Tequendama<br>Bogotá D.C. Colombia</p>
-        <h4 class="mt-24">NOS ENCUENTRAS EN</h4>
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="X">x</a>
-        </div>
-      </div>
-      <div class="testimonial-clasco-quote">
-        <span class="testimonial-label">NUESTROS CLIENTES Y SU EXPERIENCIA</span>
-        <div class="testimonial-quote-content">
-          <blockquote>
-            "CLASCO ha evolucionado a ser una experiencia estratégica para nuestra organización gracias al trabajo de Singular"
-          </blockquote>
-          <p class="testimonial-author"><strong>Ramiro Altamar</strong> - Promotor y Gerente de CLASCO, Cali. Colombia</p>
-        </div>
-        <div class="testimonial-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOGOS CLIENTES FULL (reusa mismos SVGs) -->
-  <section class="logos-section-full">
-    <div class="logos-track">
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 150 40" height="38">
-          <circle cx="16" cy="20" r="12" fill="none" stroke="white" stroke-width="1.2" opacity="0.7"/>
-          <text x="14" y="24" font-size="10" fill="white" font-weight="700" text-anchor="middle" opacity="0.7">G</text>
-          <text x="38" y="15" font-size="7" fill="white" font-weight="600" font-style="italic" opacity="0.7">Fundación</text>
-          <text x="38" y="23" font-size="5.5" fill="white" opacity="0.5" font-style="italic">Taller / Premio /</text>
-          <text x="38" y="29" font-size="5.5" fill="white" opacity="0.5" font-style="italic">Festival / Centro /</text>
-          <text x="38" y="37" font-size="8" fill="white" font-weight="800" opacity="0.7">Gabo.</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 70 32" height="32">
-          <text x="0" y="26" font-size="28" fill="white" font-weight="900" letter-spacing="-1" opacity="0.8">EFE</text>
-          <text x="55" y="12" font-size="5" fill="white" opacity="0.6">:</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 110 32" height="30">
-          <text x="0" y="22" font-size="16" fill="white" font-weight="400" letter-spacing="1" opacity="0.7">Latitud</text>
-          <text x="76" y="22" font-size="16" fill="white" font-weight="800" opacity="0.8">R</text>
-          <circle cx="90" cy="16" r="8" fill="none" stroke="white" stroke-width="1" opacity="0.4"/>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 140 36" height="34">
-          <text x="0" y="16" font-size="12" fill="white" font-weight="500" opacity="0.7">Google</text>
-          <text x="0" y="32" font-size="12" fill="white" font-weight="700" opacity="0.8">News Initiative</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 140 36" height="32">
-          <path d="M8 10 L16 4 L24 10 L16 16Z" fill="white" opacity="0.7"/>
-          <path d="M8 14 L16 20 L24 14" fill="none" stroke="white" stroke-width="1.2" opacity="0.5"/>
-          <text x="30" y="16" font-size="12" fill="white" font-weight="500" opacity="0.7">Bancolombia</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 70 28" height="28">
-          <text x="0" y="22" font-size="20" fill="white" font-weight="300" letter-spacing="2" opacity="0.7">sura</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 130 40" height="36">
-          <circle cx="14" cy="20" r="10" fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
-          <path d="M10 16 L14 12 L18 16 M10 20 L14 24 L18 20" stroke="white" stroke-width="1" fill="none" opacity="0.6"/>
-          <text x="30" y="14" font-size="5.5" fill="white" opacity="0.5">Red Distrital</text>
-          <text x="30" y="22" font-size="5.5" fill="white" opacity="0.5">de Bibliotecas</text>
-          <text x="30" y="30" font-size="5.5" fill="white" opacity="0.5">Públicas de</text>
-          <text x="30" y="38" font-size="6" fill="white" font-weight="700" opacity="0.7">Bogotá</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 50 32" height="36">
-          <text x="0" y="28" font-size="32" fill="white" font-weight="800" letter-spacing="-2" opacity="0.8">UN</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 120 40" height="36">
-          <circle cx="16" cy="18" r="12" fill="none" stroke="white" stroke-width="0.8" opacity="0.5"/>
-          <path d="M12 12 L16 8 L20 12 L16 14Z" fill="white" opacity="0.5"/>
-          <text x="34" y="15" font-size="6" fill="white" font-weight="600" letter-spacing="2" opacity="0.7">PREMIER</text>
-          <text x="34" y="24" font-size="7" fill="white" font-weight="700" letter-spacing="1.5" opacity="0.7">PALACE HOTEL</text>
-          <text x="34" y="32" font-size="4.5" fill="white" opacity="0.4" font-style="italic">Primero est amor</text>
-        </svg>
-      </span>
-      <span class="logo-item logo-svg">
-        <svg viewBox="0 0 100 40" height="36">
-          <rect x="4" y="8" width="20" height="26" rx="1" fill="none" stroke="white" stroke-width="0.8" opacity="0.5"/>
-          <line x1="8" y1="8" x2="8" y2="34" stroke="white" stroke-width="0.6" opacity="0.4"/>
-          <line x1="12" y1="8" x2="12" y2="34" stroke="white" stroke-width="0.6" opacity="0.4"/>
-          <line x1="16" y1="8" x2="16" y2="34" stroke="white" stroke-width="0.6" opacity="0.4"/>
-          <line x1="20" y1="8" x2="20" y2="34" stroke="white" stroke-width="0.6" opacity="0.4"/>
-          <text x="30" y="16" font-size="6" fill="white" font-weight="600" opacity="0.6">Museo</text>
-          <text x="30" y="25" font-size="6" fill="white" font-weight="600" opacity="0.6">Nacional</text>
-          <text x="30" y="34" font-size="5" fill="white" opacity="0.5">de Colombia</text>
-        </svg>
-      </span>
-    </div>
-  </section>
 
   <!-- CTA FINAL -->
   <section class="cta-final">
-    <div class="cta-petals-left">
-      <div class="petal p1"></div>
-      <div class="petal p2"></div>
-      <div class="petal p3"></div>
-      <div class="petal p4"></div>
-    </div>
-    <div class="cta-petals-right">
-      <div class="petal p1"></div>
-      <div class="petal p2"></div>
-      <div class="petal p3"></div>
-      <div class="petal p4"></div>
-    </div>
     <div class="cta-final-content">
       <h2>Convierte tu evento en una herramienta estratégica para tu organización</h2>
       <a href="#" class="btn-primary-outline">Contáctanos</a>
